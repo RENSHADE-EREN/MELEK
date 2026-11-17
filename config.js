@@ -143,7 +143,7 @@ var SITE_CONFIG = {
     subtitle: "18 yıllık bir hikâyenin resmî özeti",
     portrait: "photos/photo-_02.jpg",   // Kartın portre fotoğrafı
     portraitAlt: "Ebrar'ın portre fotoğrafı",
-    description: "Bu bölüm senin kelimelerini bekliyor: Ebrar'ı birkaç cümleyle anlatan tanımı buraya yaz. (config.js → identity → description)",
+    description: "Arada aşırı gıcık ve mal olsada bir o kadar babayiğit kral bir babadır bizim için",
     fields: [
       { label: "İsim", value: "Ebrar" },
       { label: "Doğum tarihi", value: "17 Kasım 2008" },
