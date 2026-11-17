@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Ebrar'a Özel · 18. Doğum Günü</title>
+  <meta name="description" content="Ebrar için hazırlanmış sihirli 18. doğum günü hediyesi: anılar, dilek mumları, özel bir mektup ve kutlama.">
+  <meta name="theme-color" content="#1b0f33">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3CradialGradient id='g' cx='.4' cy='.3' r='1'%3E%3Cstop offset='0' stop-color='%23ffb3e0'/%3E%3Cstop offset='.6' stop-color='%23ff5fa8'/%3E%3Cstop offset='1' stop-color='%23a855f7'/%3E%3C/radialGradient%3E%3C/defs%3E%3Cpath d='M32 55l-3.8-3.4C13.4 38.6 6 32 6 23.5 6 15.5 12.4 9 20.3 9c4.5 0 8.8 2.1 11.7 5.4C34.9 11.1 39.2 9 43.7 9 51.6 9 58 15.5 58 23.5c0 8.5-7.4 15.1-22.2 28.1L32 55z' fill='url(%23g)'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="config.js"></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <a class="skip-link" href="#main">İçeriğe geç</a>
+
+  <!-- Konfeti tuvali (tüm sayfanın üstünde, dokunulmaz) -->
+  <canvas id="confettiCanvas" aria-hidden="true"></canvas>
+
+  <!-- Sihirli arka plan ışıkları -->
+  <div class="page-glow" aria-hidden="true">
+    <span class="orb orb-a"></span>
+    <span class="orb orb-b"></span>
+    <span class="orb orb-c"></span>
+  </div>
+  <div class="starfield" aria-hidden="true">
+    <span class="stars stars-1"></span>
+    <span class="stars stars-2"></span>
+  </div>
+
+  <!-- ============ ÜST MENÜ ============ -->
+  <header class="nav" id="nav">
+    <a class="nav-brand" href="#hero" aria-label="Başa dön">
+      <svg class="nav-heart" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" fill="currentColor"/>
+      </svg>
+      <span id="navBrandName">Ebrar</span>
+      <span class="nav-brand-age" id="navBrandAge">18</span>
+    </a>
+    <nav class="nav-links" id="navLinks" aria-label="Bölümler"></nav>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ 1) DOĞUM GÜNÜ AÇILIŞI ============ -->
+    <section id="hero" class="hero" aria-label="Doğum günü açılışı">
+      <div class="hero-decor" id="heroDecor" aria-hidden="true"></div>
+
+      <div class="hero-inner">
+        <p class="hero-kicker" id="heroKicker"></p>
+
+        <h1 class="hero-line1 script" id="heroLine1"></h1>
+        <p class="hero-line2" id="heroLine2"></p>
+
+        <div class="hero-age" aria-hidden="true">
+          <span class="hero-age-ring"></span>
+          <span class="hero-age-num script" id="heroAgeNum">18</span>
+          <span class="hero-age-label">yaş</span>
+        </div>
+
+        <p class="hero-intro" id="heroIntro"></p>
+      </div>
+
+      <div class="hero-cue" aria-hidden="true">
+        <span class="hero-cue-text" id="heroCueText"></span>
+        <svg class="hero-cue-arrow" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M12 4v14M6 13l6 6 6-6"/>
+        </svg>
+      </div>
+    </section>
+
+    <!-- ============ 2) ANI GALERİSİ ============ -->
+    <section id="galeri" class="section" aria-labelledby="galeriBaslik">
+      <header class="section-head reveal">
+        <p class="kicker" id="galeriKicker"></p>
+        <h2 class="section-title script" id="galeriBaslik"></h2>
+        <p class="section-sub" id="galeriSub"></p>
+      </header>
+      <div class="gallery-grid" id="galleryGrid"></div>
+      <p class="gallery-empty" id="galleryEmpty" hidden>
+        Galeride henüz içerik yok — config.js → gallery → items bölümüne fotoğraf ekleyebilirsin.
+      </p>
+    </section>
+
+    <!-- ============ 3) KİMLİK KARTI ============ -->
+    <section id="kimlik" class="section" aria-labelledby="kimlikBaslik">
+      <header class="section-head reveal">
+        <p class="kicker" id="kimlikKicker"></p>
+        <h2 class="section-title script" id="kimlikBaslik"></h2>
+        <p class="section-sub" id="kimlikSub"></p>
+      </header>
+      <div class="identity-wrap reveal">
+        <article class="id-card" id="idCard"></article>
+      </div>
+    </section>
+
+    <!-- ============ 4) DOĞUM GÜNÜ PASTASI ============ -->
+    <section id="pasta" class="section" aria-labelledby="pastaBaslik">
+      <header class="section-head reveal">
+        <p class="kicker" id="pastaKicker"></p>
+        <h2 class="section-title script" id="pastaBaslik"></h2>
+        <p class="section-sub" id="pastaSub"></p>
+      </header>
+
+      <div class="cake-scene reveal" id="cakeScene">
+        <div class="cake-wrap" aria-hidden="true">
+          <div class="cake-glow"></div>
+          <div class="cake-plate"></div>
+          <div class="cake-body">
+            <span class="cake-frosting"></span>
+            <span class="cake-age script" id="cakeAge">18</span>
+            <span class="cake-sprinkle s1"></span>
+            <span class="cake-sprinkle s2"></span>
+            <span class="cake-sprinkle s3"></span>
+            <span class="cake-sprinkle s4"></span>
+            <span class="cake-sprinkle s5"></span>
+            <span class="cake-sprinkle s6"></span>
+          </div>
+          <div class="cake-candles" id="cakeCandles"></div>
+        </div>
+
+        <div class="cake-ui">
+          <p class="cake-msg" id="cakeMsg"></p>
+          <div class="cake-actions">
+            <button id="blowAllBtn" class="btn btn-primary" type="button"></button>
+            <button id="micBtn" class="btn btn-ghost" type="button" hidden></button>
+            <button id="relightBtn" class="btn btn-ghost" type="button" hidden></button>
+          </div>
+          <div class="cake-done" id="cakeDone" hidden>
+            <p class="cake-done-title script" id="cakeDoneTitle"></p>
+            <p class="cake-done-text" id="cakeDoneText"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 5) ÖZEL MEKTUP ============ -->
+    <section id="mektup" class="section" aria-labelledby="mektupBaslik">
+      <header class="section-head reveal">
+        <p class="kicker" id="mektupKicker"></p>
+        <h2 class="section-title script" id="mektupBaslik"></h2>
+        <p class="section-sub" id="mektupSub"></p>
+      </header>
+
+      <div class="letter-stage reveal">
+        <div class="envelope-wrap">
+          <button id="envelopeBtn" class="envelope" type="button" aria-expanded="false" aria-controls="letterCard">
+            <span class="env-back" aria-hidden="true"></span>
+            <span class="env-letter" aria-hidden="true"></span>
+            <span class="env-flap" aria-hidden="true"></span>
+            <span class="env-front" aria-hidden="true"></span>
+            <span class="env-seal" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true">
+                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" fill="currentColor"/>
+              </svg>
+            </span>
+            <span class="env-hint" id="envelopeHint"></span>
+          </button>
+        </div>
+
+        <article class="letter-card" id="letterCard" hidden>
+          <div class="letter-head">
+            <span class="letter-date" id="letterDate"></span>
+            <svg class="letter-heart" viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
+              <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" fill="currentColor"/>
+            </svg>
+          </div>
+          <p class="letter-greeting script" id="letterGreeting"></p>
+          <div class="letter-body" id="letterBody"></div>
+          <p class="letter-signature script" id="letterSignature"></p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ 6) FİNAL KUTLAMA ============ -->
+    <section id="son" class="section finale" aria-labelledby="sonBaslik">
+      <div class="finale-decor" id="finaleDecor" aria-hidden="true"></div>
+      <div class="finale-inner reveal">
+        <p class="kicker" id="sonKicker"></p>
+        <div class="finale-heart" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="54" height="54" aria-hidden="true">
+            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" fill="currentColor"/>
+          </svg>
+        </div>
+        <h2 class="finale-title script" id="sonBaslik"></h2>
+        <p class="finale-msg" id="sonMsg"></p>
+        <p class="finale-signature script" id="sonSignature"></p>
+        <p class="finale-date" id="sonDate"></p>
+        <button id="backTopBtn" class="btn btn-ghost" type="button"></button>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ SAYFA SONU ============ -->
+  <footer class="footer">
+    <p class="footer-note" id="footerNote"></p>
+    <p class="footer-legal" id="footerLegal"></p>
+  </footer>
+
+  <!-- ============ BÜYÜTEÇ (LIGHTBOX) ============ -->
+  <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-labelledby="lbTitle" hidden>
+    <div class="lb-backdrop" id="lbBackdrop"></div>
+    <figure class="lb-body">
+      <div class="lb-media" id="lbMedia"></div>
+      <figcaption class="lb-cap">
+        <p class="lb-counter" id="lbCounter"></p>
+        <h3 id="lbTitle"></h3>
+        <p id="lbNote"></p>
+      </figcaption>
+    </figure>
+    <button class="lb-nav lb-prev" id="lbPrev" type="button" aria-label="Önceki anı">
+      <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>
+    </button>
+    <button class="lb-nav lb-next" id="lbNext" type="button" aria-label="Sonraki anı">
+      <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
+    </button>
+    <button class="lb-close" id="lbClose" type="button" aria-label="Kapat">
+      <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+  </div>
+
+  <!-- ============ MÜZİK ============ -->
+  <button id="musicFab" class="music-fab" type="button" aria-pressed="false" aria-label="Müziği çal veya duraklat" hidden>
+    <span class="fab-icon fab-icon-play" aria-hidden="true">
+      <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M9 18.5V5.8l11-2v12.3"/><circle cx="6.5" cy="18.5" r="2.6"/><circle cx="17.5" cy="16.1" r="2.6"/>
+      </svg>
+    </span>
+    <span class="fab-icon fab-icon-pause" aria-hidden="true">
+      <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+        <path d="M8.5 5v14M15.5 5v14"/>
+      </svg>
+    </span>
+    <span class="fab-note" aria-hidden="true"></span>
+    <span class="fab-eq" aria-hidden="true"><i></i><i></i><i></i></span>
+  </button>
+
+  <div id="musicPanel" class="music-panel" role="dialog" aria-label="Müzik oynatıcı" hidden>
+    <div class="music-panel-head">
+      <span class="music-dot" aria-hidden="true"></span>
+      <span class="music-label" id="musicLabel"></span>
+      <button id="musicPanelClose" class="music-close" type="button" aria-label="Oynatıcıyı kapat">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </div>
+    <div class="music-stage" id="musicStage"></div>
+    <p class="music-hint" id="musicHint"></p>
+  </div>
+
+  <!-- ============ BİLDİRİMLER ============ -->
+  <div id="toasts" class="toasts" aria-live="polite"></div>
+
+  <noscript>
+    <p class="noscript-note">Bu site JavaScript gerektirir. Tarayıcının JavaScript desteğini aç ve sayfayı yenile.</p>
+  </noscript>
+
+</body>
+</html>
