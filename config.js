@@ -38,7 +38,7 @@ var SITE_CONFIG = {
     line2: "",                     // BOŞ BIRAK: "İYİ Kİ DOĞDUN EBRAR!" otomatik oluşur.
                                    // Farklı bir şey yazmak istersen buraya yaz.
     bigNumber: 18,                 // Dev "yaş" rakamı
-    intro: "Bugün sıradan bir gün değil: 18 yıl önce başlayan hikâyenin en parlak sayfası. Aşağı kaydır — bu küçük hediye senin için hazırlandı.",
+    intro: "Bugün sıradan bir gün değil: 18 yıl önce başlayan hikâyenin en parlak sayfası. Aşağı kaydır — bu küçük hediye en sevdiğimiz kürt için hazırlandı.",
     scrollHint: "Kaydır ve keşfet",
   },
 
@@ -64,9 +64,9 @@ var SITE_CONFIG = {
      ================================================================== */
   music: {
     enabled: true,
-    provider: "local",       // "youtube" | "spotify" | "local"
-    url: "music.mp3",        // Şarkı linki veya dosya adı (yukarıya bak)
-    autoplay: false,         // true yaparsan ilk dokunuşta müzik kendiliğinden başlar
+    provider: "youtube",       // "youtube" | "spotify" | "local"
+    url: "https://music.youtube.com/watch?v=LwU9e4dWgUM&si=kLXf2zju5vm11n-x&drli=1",        // Şarkı linki veya dosya adı (yukarıya bak)
+    autoplay: true,         // true yaparsan ilk dokunuşta müzik kendiliğinden başlar
     showPlayer: true,        // Küçük oynatıcı paneli görünsün mü?
     loop: true,              // Şarkı bitince tekrar başlasın mı? (yerel dosyada)
     volume: 0.7,             // Ses seviyesi: 0.0 ile 1.0 arası
@@ -99,21 +99,33 @@ var SITE_CONFIG = {
     title: "Birlikte Yaşadığımız Anlar",
     subtitle: "Her kare kendi hikâyesini anlatıyor. Fotoğraflara dokunarak büyütebilirsin.",
     items: [
-      { id: "memory-01", type: "image", file: "photos/photo-01.jpg", title: "Şehrin Üstünde Bir Yıldız", note: "O gece şehrin üzerinde tek bir yıldız parladı; ertesi sabah Ebrar dünyaya geldi. Tesadüf mü? Biz sanmıyoruz." },
-      { id: "memory-02", type: "image", file: "photos/photo-02.jpg", title: "Sisli Gecede Bir Yürüyüş", note: "Yol uzun olsa da adımlar hep emin atıldı. Yürüyenin kim olduğu zaten aşikâr." },
-      { id: "memory-03", type: "image", file: "photos/photo-03.jpg", title: "Kahkahanın Kanıtı", note: "O gülüş duyulduğunda, sokaktaki neonlar bile bir an kendilerini unuttu." },
-      { id: "memory-04", type: "image", file: "photos/photo-04.jpg", title: "Gece Sohbeti", note: "İki koltuk, tek lamba, saatlerce konuşma. Yorgunluk, keyfe yenik düştü." },
-      { id: "memory-05", type: "image", file: "photos/photo-05.jpg", title: "Gece Atıştırması", note: "Ses yok, ışık bile kısık... Ama sabah bulunan boş tabak her şeyi anlatıyordu." },
-      { id: "memory-06", type: "image", file: "photos/photo-06.jpg", title: "Rüya Arasında", note: "Alarm çaldı ama rüya bitmemişti. \"Beş dakika daha...\" derin bir hikâye." },
-      { id: "memory-07", type: "image", file: "photos/photo-07.jpg", title: "Flaşlar Arasında", note: "Kimi anlar net, kimi anlar bulanık. Ama hepsi aynı güzelliği taşıyor." },
-      { id: "memory-08", type: "image", file: "photos/photo-08.jpg", title: "İki Fincan", note: "Bir masada iki kahve. Sohbet bitince fincanlar değil, sohbete yenildi." },
-      { id: "memory-09", type: "image", file: "photos/photo-09.jpg", title: "Eski Telefon, Sıcak Sözler", note: "Bu ahizeden konuşulan her şey kalpten kalbe gitti." },
-      { id: "memory-10", type: "image", file: "photos/photo-10.jpg", title: "Omzunun Üzerinden Bir Bakış", note: "Fotoğrafa değil, hayata bakış. Bu bakışı yakalayanlar şanslıdır." },
-      { id: "memory-11", type: "image", file: "photos/photo-11.jpg", title: "Özel Bir Gece İçin", note: "Bir elbise asmada bekliyor. Doğum günü geldiğinde onun da saati çalacak." },
-      { id: "memory-12", type: "image", file: "photos/photo-12.jpg", title: "Uzanan Yol", note: "Yolun sonu değil, yolda birlikte yürümek güzeldi. Nereye gidersek gidelim." },
-      { id: "memory-13", type: "image", file: "photos/photo-13.jpg", title: "Sinema Gecesi", note: "Film ne olursa olsun, perde her seferinde bir öncekinden daha parlak görünüyordu." },
-      { id: "memory-14", type: "image", file: "photos/photo-14.jpg", title: "Pencere Kenarında", note: "Işıklar dışarıda, gülüş içeride. En güzel manzara hangisiydi, hâlâ tartışılıyor." },
-      { id: "memory-15", type: "image", file: "photos/photo-15.jpg", title: "Bir Mum, Bir Dilek", note: "18. yılın mumu: gözlerini kapat, dileğini tut. Gerisi sadece güzel olacak." },
+      { id: "memory-01", type: "image", file: "photos/photo-_01.jpg", title: "3 maymun", note: "kesin kolsuz gökhan kaybetti" },
+      { id: "memory-03", type: "image", file: "photos/photo-_03.jpg", title: "", note: "" },
+      { id: "memory-04", type: "image", file: "photos/photo-_04.jpg", title: "", note: "" },
+      { id: "memory-05", type: "image", file: "photos/photo-_05.jpg", title: "PUHAHAA", note: "GÜLÜŞÜN DAİM OLSUN KİNGO" },
+      { id: "memory-06", type: "image", file: "photos/photo-_06.jpg", title: "LAN HÜZÜNLENDİM", note: "tiplere bak aw" },
+      { id: "memory-07", type: "image", file: "photos/photo-_07.jpg", title: "oyoyoy", note: "" },
+      { id: "memory-08", type: "image", file: "photos/photo-_08.jpg", title: "ayı", note: "sakin ebrar bi çikolata gördün" },
+      { id: "memory-09", type: "image", file: "photos/photo-_09.jpg", title: "hıh", note: "bizsiz tadı yok tabi ama" },
+      { id: "memory-10", type: "image", file: "photos/photo-_10.jpg", title: "", note: "" },
+      { id: "memory-11", type: "image", file: "photos/photo-_11.jpg", title: "çok tatlı", note: "sadece çay paketi kadar" },
+      { id: "memory-12", type: "image", file: "photos/photo-_12.jpg", title: "gerçek yüzünü", note: "sonunda göstermen ne güzell" },
+      { id: "memory-13", type: "image", file: "photos/photo-_13.jpg", title: "EPİK TÜRKLER", note: "efsane tayfa " },
+      { id: "memory-14", type: "image", file: "photos/photo-_14.jpg", title: "Kurban olduğum", note: "yüzüne nur inmiş aw" },
+      { id: "memory-15", type: "image", file: "photos/photo-_15.jpg", title: "", note: "" },
+      { id: "memory-16", type: "image", file: "photos/photo-_16.jpg", title: "", note: "" },
+      { id: "memory-17", type: "image", file: "photos/photo-_17.jpg", title: "", note: "" },
+      { id: "memory-18", type: "image", file: "photos/photo-_18.jpg", title: "", note: "" },
+      { id: "memory-19", type: "image", file: "photos/photo-_19.jpg", title: "GAY", note: "" },
+      { id: "memory-20", type: "image", file: "photos/photo-_20.jpg", title: "DİVALAR", note: "gerçek divalar dediğin böyle olur" },
+      { id: "video-01", type: "video", file: "videos/video-_01.mp4",
+       poster: "photos/photo-15.jpg",
+       title: "VATAN MİLLET EBOŞ",
+       note: "AHFDJHGJSDHG EFSANE AW" },
+      { id: "video-02", type: "video", file: "videos/video-_02.mp4",
+       poster: "photos/photo-15.jpg",
+       title: "BUNU NİYE KOYDUM BİLMYORUM",
+       note: "" },
     ],
   },
 
@@ -129,20 +141,20 @@ var SITE_CONFIG = {
     kicker: "Resmî Doğum Günü Kartı",
     title: "Ebrar'ın Kimlik Kartı",
     subtitle: "18 yıllık bir hikâyenin resmî özeti",
-    portrait: "photos/photo-14.jpg",   // Kartın portre fotoğrafı
+    portrait: "photos/photo-_02.jpg",   // Kartın portre fotoğrafı
     portraitAlt: "Ebrar'ın portre fotoğrafı",
     description: "Bu bölüm senin kelimelerini bekliyor: Ebrar'ı birkaç cümleyle anlatan tanımı buraya yaz. (config.js → identity → description)",
     fields: [
       { label: "İsim", value: "Ebrar" },
       { label: "Doğum tarihi", value: "17 Kasım 2008" },
       { label: "Yaş", value: "18" },
-      { label: "Görev", value: "Hayatı güzelleştirmek" },
+      { label: "Görev", value: "Hayatı güzelleştirmek ve kürt olmak" },
     ],
     facts: [
-      { label: "En sevdiği şarkı", value: "—" },
+      { label: "En sevdiği şarkıcı", value: "wegh" },
       { label: "En sevdiği renk", value: "—" },
       { label: "En sevdiği tatlı", value: "—" },
-      { label: "Bir gizli yeteneği", value: "—" },
+      { label: "Bir gizli yeteneği", value: "kürt olmak" },
     ],
     factsHint: "(Bu bölüm boş bırakıldı — değerleri config.js → identity → facts içinden doldurabilirsin.)",
     badges: [ "Gülüş Ustası", "Odaları Isıtan Kişi", "18. Sezonun Yıldızı" ],
@@ -175,14 +187,14 @@ var SITE_CONFIG = {
     title: "Ebrar'a Özel Bir Mektup",
     subtitle: "Kalp mühürlü bir zarf, içinde bir sürpriz",
     envelopeHint: "Zarfa dokun — içindeki mektup senin için yazıldı",
-    greeting: "Sevgili Ebrar,",
+    greeting: "Sevgili Kürt,",
     paragraphs: [
-      "Bugün bir hikâyenin en güzel sayfası yazılıyor: 17 Kasım 2008'de başlayan yolculuk, tam 18 yıl sonra bugün en tatlı durağına ulaştı.",
-      "Şakayı bir kenara bırakıp en samimi hâlimizle yazıyoruz: seni tanımak, yanında olmak ve seninle büyümek bu 18 yılın en güzel kısmıydı. Girdiğin ortamı ısıtan, seven ve sevilen ender insanlardansın.",
-      "Bundan sonrası tamamen senin: hayallerinin peşinden çekinmeden yürü. Nereye gidersen git, iki dostun her zaman bir mesaj uzağında.",
-      "Yolun açık, kalbin hafif, kahven her zaman sıcak olsun. İyi ki doğdun.",
+      "Bugün en sevdiğimiz Kürt kuzenimizin 18. yaşına girişini hep beraber içtenlikle kutluyoruz ",
+      "şaka maka bizim için çok değerlisin hayatımızda ve anılarımızda hep güzel anlar yaşatıığın için teşşekürler",
+      "önümüzdeki bu güzel hayatta her zaman yanındayız ",
+      "sevildiğini ve arkanın her zaman arkanda olduğumuzu unutma İyi ki doğdun.",
     ],
-    signature: "Seni seven,\nEren & Yaşır",
+    signature: "Seni seven,\nEren",
     date: "17 Kasım 2026",
   },
 
@@ -193,7 +205,7 @@ var SITE_CONFIG = {
     kicker: "Ve Kutlama",
     title: "İyi ki Doğdun Ebrar",
     message: "18 yıl, 6.574 gün, sayısız kahkaha... Ve bu hikâye daha yeni ısınıyor. Mutlu yıllar Ebrar — seni çok seviyoruz.",
-    signature: "Sevgiyle — Eren & Yaşır",
+    signature: "Sevgiyle — Eren & Yasir",
     date: "17 Kasım 2026",
     backButton: "Başa Dön",
   },
@@ -214,7 +226,7 @@ var SITE_CONFIG = {
      10) SAYFA SONU — küçük alt bilgi
      ================================================================== */
   footer: {
-    note: "Bu site sevgiyle hazırlandı — Eren & Yaşır",
+    note: "Bu site sevgiyle hazırlandı — Eren",
     legal: "© 2008–2026 · İyi ki doğdun Ebrar",
   },
 };
