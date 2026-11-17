@@ -156,8 +156,8 @@ var SITE_CONFIG = {
       { label: "En sevdiği tatlı", value: "—" },
       { label: "Bir gizli yeteneği", value: "kürt olmak" },
     ],
-    factsHint: "(Bu bölüm boş bırakıldı — değerleri config.js → identity → facts içinden doldurabilirsin.)",
-    badges: [ "Gülüş Ustası", "Odaları Isıtan Kişi", "18. Sezonun Yıldızı" ],
+    factsHint: "EBRAR FAİK ABASI YANIK KÜRT",
+    badges: [ "KÜRT", "CİNGAN", "En sevilen karakter" ],
   },
 
   /* ==================================================================
@@ -172,7 +172,7 @@ var SITE_CONFIG = {
     blowButton: "Dileği Tut, Mumları Söndür",
     micButton: "Mikrofonla Üfle",
     completionTitle: "Dileğin Kabul Olsun!",
-    completionMessage: "18 mum söndü, 18 yıl geride kaldı. Önünde ise daha nice parlak yıllar var. İyi ki doğdun Ebrar!",
+    completionMessage: "18 mum söndü, 18 yıl geride kaldı. Önünde ise daha nice parlak yıllar var KÜRT. İyi ki doğdun Ebrar!",
     relightButton: "Mumları Yeniden Yak",
   },
 
