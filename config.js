@@ -82,9 +82,9 @@ var SITE_CONFIG = {
      ================================================================== */
   music: {
     enabled: true,
-    provider: "local",       // "youtube" | "spotify" | "local"
-    url: "music.mp3",        // Şarkı linki veya dosya adı (yukarıya bak)
-    autoplay: false,         // true yaparsan ilk dokunuşta müzik kendiliğinden başlar
+    provider: "youtube",       // "youtube" | "spotify" | "local"
+    url: "https://music.youtube.com/watch?v=Fcs9DLlHsPI&si=-3Wvf6hEj1bOAoT2&drli=1",        // Şarkı linki veya dosya adı (yukarıya bak)
+    autoplay: true,         // true yaparsan ilk dokunuşta müzik kendiliğinden başlar
     showPlayer: true,        // Küçük oynatıcı paneli görünsün mü?
     loop: true,              // Şarkı bitince tekrar başlasın mı? (yerel dosyada)
     volume: 0.7,             // Ses seviyesi: 0.0 ile 1.0 arası
@@ -117,21 +117,34 @@ var SITE_CONFIG = {
     title: "Birlikte Yaşadığımız Anlar",
     subtitle: "Her kare kendi hikâyesini anlatıyor. Fotoğraflara dokunarak büyütebilirsin.",
     items: [
-      { id: "memory-01", type: "image", file: "photos/photo-01.jpg", title: "Şehrin Üstünde Bir Yıldız", note: "O gece şehrin üzerinde tek bir yıldız parladı; ertesi sabah Melek dünyaya geldi. Tesadüf mü? Biz sanmıyoruz." },
-      { id: "memory-02", type: "image", file: "photos/photo-02.jpg", title: "Sisli Gecede Bir Yürüyüş", note: "Yol uzun olsa da adımlar hep emin atıldı. Yürüyenin kim olduğu zaten aşikâr." },
-      { id: "memory-03", type: "image", file: "photos/photo-03.jpg", title: "Kahkahanın Kanıtı", note: "O gülüş duyulduğunda, sokaktaki neonlar bile bir an kendilerini unuttu." },
-      { id: "memory-04", type: "image", file: "photos/photo-04.jpg", title: "Gece Sohbeti", note: "İki koltuk, tek lamba, saatlerce konuşma. Yorgunluk, keyfe yenik düştü." },
-      { id: "memory-05", type: "image", file: "photos/photo-05.jpg", title: "Gece Atıştırması", note: "Ses yok, ışık bile kısık... Ama sabah bulunan boş tabak her şeyi anlatıyordu." },
-      { id: "memory-06", type: "image", file: "photos/photo-06.jpg", title: "Rüya Arasında", note: "Alarm çaldı ama rüya bitmemişti. \"Beş dakika daha...\" derin bir hikâye." },
-      { id: "memory-07", type: "image", file: "photos/photo-07.jpg", title: "Flaşlar Arasında", note: "Kimi anlar net, kimi anlar bulanık. Ama hepsi aynı güzelliği taşıyor." },
-      { id: "memory-08", type: "image", file: "photos/photo-08.jpg", title: "İki Fincan", note: "Bir masada iki kahve. Sohbet bitince fincanlar değil, sohbete yenildi." },
-      { id: "memory-09", type: "image", file: "photos/photo-09.jpg", title: "Eski Telefon, Sıcak Sözler", note: "Bu ahizeden konuşulan her şey kalpten kalbe gitti." },
-      { id: "memory-10", type: "image", file: "photos/photo-10.jpg", title: "Omzunun Üzerinden Bir Bakış", note: "Fotoğrafa değil, hayata bakış. Bu bakışı yakalayanlar şanslıdır." },
-      { id: "memory-11", type: "image", file: "photos/photo-11.jpg", title: "Özel Bir Gece İçin", note: "Bir elbise asmada bekliyor. Doğum günü geldiğinde onun da saati çalacak." },
-      { id: "memory-12", type: "image", file: "photos/photo-12.jpg", title: "Uzanan Yol", note: "Yolun sonu değil, yolda birlikte yürümek güzeldi. Nereye gidersek gidelim." },
-      { id: "memory-13", type: "image", file: "photos/photo-13.jpg", title: "Sinema Gecesi", note: "Film ne olursa olsun, perde her seferinde bir öncekinden daha parlak görünüyordu." },
-      { id: "memory-14", type: "image", file: "photos/photo-14.jpg", title: "Pencere Kenarında", note: "Işıklar dışarıda, gülüş içeride. En güzel manzara hangisiydi, hâlâ tartışılıyor." },
-      { id: "memory-15", type: "image", file: "photos/photo-15.jpg", title: "Bir Mum, Bir Dilek", note: "18. yılın mumu: gözlerini kapat, dileğini tut. Gerisi sadece güzel olacak." },
+    { id: "memory-01", type: "image", file: "photos/photo-_01.jpg", title: "", note: "" },
+      { id: "memory-03", type: "image", file: "photos/photo-_03.jpg", title: "", note: "" },
+      { id: "memory-04", type: "image", file: "photos/photo-_04.jpg", title: "", note: "" },
+      { id: "memory-05", type: "image", file: "photos/photo-_05.jpg", title: "", note: "" },
+      { id: "memory-06", type: "image", file: "photos/photo-_06.jpg", title: "", note: "" },
+      { id: "memory-07", type: "image", file: "photos/photo-_07.jpg", title: "", note: "" },
+      { id: "memory-08", type: "image", file: "photos/photo-_08.jpg", title: "", note: "" },
+      { id: "memory-09", type: "image", file: "photos/photo-_09.jpg", title: "", note: "" },
+      { id: "memory-10", type: "image", file: "photos/photo-_10.jpg", title: "", note: "" },
+      { id: "memory-11", type: "image", file: "photos/photo-_11.jpg", title: "", note: "" },
+      { id: "memory-12", type: "image", file: "photos/photo-_12.jpg", title: "", note: "" },
+      { id: "memory-13", type: "image", file: "photos/photo-_13.jpg", title: "", note: "" },
+      { id: "memory-14", type: "image", file: "photos/photo-_14.jpg", title: "", note: "" },
+      { id: "memory-15", type: "image", file: "photos/photo-_15.jpg", title: "", note: "" },
+      { id: "memory-16", type: "image", file: "photos/photo-_16.jpg", title: "", note: "" },
+      { id: "memory-17", type: "image", file: "photos/photo-_17.jpg", title: "", note: "" },
+      { id: "memory-18", type: "image", file: "photos/photo-_18.jpg", title: "", note: "" },
+      { id: "memory-19", type: "image", file: "photos/photo-_19.jpg", title: "", note: "" },
+      { id: "memory-20", type: "image", file: "photos/photo-_20.jpg", title: "", note: "" },
+      { id: "memory-21", type: "image", file: "photos/photo-_21.jpg", title: "", note: "" },
+      { id: "memory-22", type: "image", file: "photos/photo-_22.jpg", title: "", note: "" },
+      { id: "memory-23", type: "image", file: "photos/photo-_23.jpg", title: "", note: "" },
+      { id: "memory-24", type: "image", file: "photos/photo-_24.jpg", title: "", note: "" },
+      { id: "memory-25", type: "image", file: "photos/photo-_25.jpg", title: "", note: "" },
+        { id: "video-01", type: "video", file: "videos/video-_01.mp4",
+       poster: "photos/photo-15.jpg",
+       title: "",
+       note: "" },
     ],
   },
 
@@ -178,21 +191,8 @@ var SITE_CONFIG = {
     envelopeHint: "Zarfa dokun — içindeki mektup senin için yazıldı",
     greeting: "Sevgili Melek,",
     text: `
-Bugün 18 oluyorsun ve ben ilk cümleyi nereden başlatacağımı bilemiyorum. Belki de en iyisi şuradan başlamak: iyi ki doğdun, iyi ki varsın, iyi ki seni tanımışım.
-
-Sana bunu yazarken aramızdaki kilometreleri düşündüm. Uzakta olmak bazen zor; özellikle de böyle özel günlerde. Ama şunu bilmeni isterim: mesafe, doğru insanlar arasındaki bağı asla eritemez. Bizimki erimedi; her yıl biraz daha sağlamlaştı. Bugün de burada olamasam bile kalbimdeki yerin, yanımda olsaydın alacağı yerden hiç farklı değil.
-
-18 yaş; kimilerine göre "resmî olarak büyüdün" demek. Bana göre ise tam tersi: her şeyin yeni başladığı yaş. Önünde kararlar var, hayaller var, belki biraz korkular da var. Hepsine sırayla, kendi hızında, kendi uslubünle yaklaşacağından hiç şüphem yok. Sen hep öyle yaptın zaten: kimsenin kalıbına sığmadan, kendi yolunu kendin çizerek.
-
-Seni tanıyan biri olarak birkaç şeyi cesaretle söyleyeyim: Girdiğin ortamı ısıtan, gülerken etrafına neşe saçan, zor gününde bile yanındakine güç veren insanlardansın. Bazen bunun ne kadar değerli olduğunu kendin bile fark etmiyorsun belki; ama biz fark ediyoruz. Senin gülüşün bir odanın aydınlığı değiştiriyor, inan buna.
-
-Geçen gün aklıma eski sohbetlerimiz geldi. Saatlerce süren, hiç sıkmayan, bazen hiçbir şeyle ilgili olmayan ama bir o kadar da güzel konuşmalarımız. Sonra düşündüm: iyi ki o sohbetlerin ilki olmuş, iyi ki hiç bitmemiş. Umarım önümüzde daha nice böylesi sohbet, daha nice kahkaha, daha nice ortak anı olur.
-
-Bundan sonrası için sana tek bir dileğim var: kendine iyi bak. Hayalin neyse peşinden çekinmeden yürü. Yorulursan dinlen ama asla vazgeçme. Kararsız kaldığın günlerde kendi sesini dinle; çünkü o ses şimdiye kadar hep doğruyu söyledi. Ve unutma: nereye gidersen git, bir mesaj uzağında seni seven bir dost var.
-
-Yolun açık, kalbin hafif, kahven hep sıcak olsun.
-Bugün sadece gülümse ve dileğini tut.
-Doğum günün kutlu olsun Melek.
+İlk olarak bana böyle bir dostluk kazandırdığın için teşekkürle başlamak istiyorum. Benim insan ilişkilerine ne kadar değer verdiğimi bilen en iyi kişilerdensin ve kmcödeki kardeşlerim hariç dost kategorisine koyabileceğim nadir kişilerdensin. 3 yıldır birbirimize yeri geldi dostluk yeri geldi sırdaşlık yaptık dertlerimizi ve sevinçlerimizi paylaştık. Bunun için minnettarım. Bir erkek kolay kolay korku ve endişelerini paylaşmaz ama seni o kadar yakın gördüğüm için bunları paylaşmaktan bile hiç bir an çekinmedim sen de elinden geldiğince destek oldun e tabi kavga da ettik (salaklıklarımızdan) 
+sen bizi harcarsın dedim zamanında ama son kavgamız da keşke olmasaydı ama benim yüzümden oldu  eksmshjxnsjzkznz. Neyse acısıyla tatlısıyla yanımda olduğun için teşekkür ediyorum sevildiğini bil. Geçen sene de çok stresli bir süreç atlattık sen şimdi hayalini kurduğumuz tıp fakültesindesin 6 yıl sonra çok iyi bir doktor olacağından hiç şüphem yok sadece bilginle değil güzel kalbinle de hastalara şifa dağıtacaksın. Bende arkandan geliyorum 1 yıl geç olsa da inşallah günün birinde meslektaş oluruz. Bu hayat çok olmasa da uzun bir yol umarım karşına değer bilen ve iyi kalpli insanlar çıkar. Düşününce çok anımız var resmi konuşmalarda ne kadar iyi olsamda duygusal konuşma ve yazma işinde çok becerikli olduğumu söyleyemem o yüzden benden bu kadar. Yeni yaşın sana mutluluklar getirsin. Sevdiklerinle nice yıllara... İyi ki doğdun Doktor hanım🥳🥳
   `,
     /* İstersen text'i silip bu listeyi de kullanabilirsin:
     paragraphs: [
@@ -232,8 +232,8 @@ Doğum günün kutlu olsun Melek.
      10) SAYFA SONU — küçük alt bilgi
      ================================================================== */
   footer: {
-    note: "Bu site sevgiyle hazırlandı — Gökhan",
-    legal: "© 2008–2026 · İyi ki doğdun Melek",
+    note: "Bu site profosyonelce tasarlandı — Eren",
+    legal: "© 2009–2026 · İyi ki doğdun Melek",
   },
 };
 
