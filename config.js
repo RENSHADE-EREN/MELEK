@@ -117,7 +117,8 @@ var SITE_CONFIG = {
     title: "Birlikte Yaşadığımız Anlar",
     subtitle: "Her kare kendi hikâyesini anlatıyor. Fotoğraflara dokunarak büyütebilirsin.",
     items: [
-    { id: "memory-01", type: "image", file: "photos/Photo-_01.jpg", title: "", note: "" },
+      { id: "memory-01", type: "image", file: "photos/Photo-_01.jpg", title: "", note: "" },
+      { id: "memory-02", type: "image", file: "photos/Photo-_02.jpg", title: "", note: "" },
       { id: "memory-03", type: "image", file: "photos/Photo-_03.jpg", title: "", note: "" },
       { id: "memory-04", type: "image", file: "photos/Photo-_04.jpg", title: "", note: "" },
       { id: "memory-05", type: "image", file: "photos/Photo-_05.jpg", title: "", note: "" },
